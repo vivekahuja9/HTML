@@ -1,0 +1,55 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
+/*css variables*/
+:root{
+    --primary : #1160BF;
+    --background : #333740;
+}
+/*blocking desktop access*/
+body {
+    background-color: #000;
+    color: var(--primary);
+  }
+  .desktop{
+      position: absolute;
+      visibility: show;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 60%;
+      height: 200px;
+      border: 3px solid var(--primary);
+  }
+  .desktop h1{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+  }
+  .body{display: none;}
+/*granting mobile access*/
+@media only screen and (max-width: 600px) {
+    .desktop{
+        display: none;
+    }
+    body{
+        background-color: #333740;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .grid{
+        color: #fff;
+    }
+    
+  }
+
+  

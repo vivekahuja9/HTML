@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>SEVA | Remote Control Air Conditioners</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Numans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/round-slider@1.5.1/dist/roundslider.min.js"></script>
+    <script src="https://kit.fontawesome.com/3a30a0a91d.js" crossorigin="anonymous"></script>
+    <script src="assets/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+                                    
+<link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
+                                    
+<script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
+</head>
+
+
+<body style="background: #333740;color: #ffff;">
+<div class="desktop">
+<h1>Please View in <i class="fa fa-mobile"> screen</i></h1>
+</div>
+<div class="body">
+    <div class="row" style="width: 100%;">
+        <div class="col">
+            <h1 style="margin-top: 13px;margin-left: 17px;font-size: 25.4px;">SEVA</h1>
+        </div>
+        <div class="col">
+            <p style="text-align: right;margin-top: 19px;font-size: 13px;">Hello User</p>
+        </div>
+    </div>
+    <h1 style="margin-top: 27px;text-align: center;font-family: Numans, sans-serif;">CR 7</h1>
+    <div style="width: 100%;height: 600px; overflow-y: hidden;" class="main__body">
+        <div class="row" style="width: 100%;">
+            <div class="col">
+                <!--Current weather-->
+                <h1 style="margin-top: 16px;margin-left: 17px;font-size: 16.4px;font-family: Poppins, sans-serif;">Air Conditioner</h1>
+                <p style="text-align: left;margin-top: -3px;font-size: 13px;margin-left: 18px;color: rgb(135,135,135);font-family: Poppins, sans-serif;">Currently 28 C</p>
+                <p style="text-align: left;margin-top: -18px;font-size: 13px;margin-left: 18px;color: rgb(135,135,135);font-family: Poppins, sans-serif;">HUmidity27%</p>
+           <!--Current weather-->
+            </div>
+            <div class="col">
+            <!--Switch one-->    
+            <div class="right" style="text-align: right;margin-top:16px; font-size: 20px;">
+                <i  class="fa fa-fan"></i> &nbsp;
+                <!--Switch-->
+                <label class="switch">
+                    <input type="checkbox" onclick="switch1()">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+         <!--Switch one--> 
+             <!--Switch two-->    
+             <div class="right" style="text-align: right;margin-top:10px; font-size: 20px;">
+                <i  class="fa fa-fan"></i>&nbsp;
+                <!--Switch-->
+                <label class="switch">
+                    <input type="checkbox" onclick="switch2()">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+              <!--Switch two-->   
+            </div>
+   
+
+        <div  style="margin-top: 220px;">
+        <!--Slider-->
+        <center>
+            <div id="slider"></div>
+    </center>
+        <!--Slider-->
+    </div>
+
+    <center>
+        <h6 style="margin-top:20px;">Fan Speed</h6>
+        <!--Range Slider-->
+        <center>
+        <form>
+            <input id="range" type="range" name="rangeInput" min="0" step="1" max="10" value="0" class="range" onchange="updateTextInput(this.value);" oninput="amount.value=rangeInput.value">
+            <input style="display: none;" oninput="rangeInput.value=amount.value" id="box" type="text" value="0" name="amount" for="rangeInput" onkeyup="updateTextInput(this.value);" oninput="amount.value=rangeInput.value" />
+          </form>
+        </center>
+  
+        <br>
+       <!--Button-->
+            <table>
+                <tr>
+                    <center>
+                        <td>
+                            <button class="glow" onclick="auto()">
+                                <i class="fa fa-fan"></i>
+                                <br> Auto
+                            </button>
+                        </td>
+                        <td>
+                            <button class="glow" onclick="cool()">
+                                <i class="fa fa-snowflake"></i>
+                                <br> Cool
+                            </button>
+                        </td>
+                        <td>
+                            <button class="glow" onclick="hot()">
+                                <i class="fa fa-sun"></i>
+                                <br> Hot
+                            </button>
+                        </td>
+                        <td>
+                            <button class="glow" onclick="dry()">
+                                <i class="fa fa-wind"></i>
+                                <br> Dry
+                            </button>
+                        </td>
+                 
+                </center>
+                </tr>
+            </table>
+       <!--Button-->
+        </div>
+    </center>
+</div>
+
+</div>
+    
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
